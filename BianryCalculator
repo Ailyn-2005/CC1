@@ -1,1 +1,29 @@
-import java.util.Scanner;
+
+public class BinaryCalculator {
+
+    public static void main(String[] args) {
+        // Given values
+        int hexValue = 0xF;           // Hexadecimal F (which is 15 in decimal)
+        int octalValue = -05;          // Octal 5 (which is -5 in decimal)
+        int binaryValue = 0b1000;      // Binary 1000 (which is 8 in decimal)
+
+        // Step 1: Perform octal subtraction
+        int octalResult = octalValue;  // -5
+
+        // Step 2: Multiply the binary value by 3
+        int binaryMultiplication = binaryValue * 3;  // 8 * 3 = 24
+
+        // Step 3: Add the hexadecimal value
+        int sum = hexValue + binaryMultiplication;  // 15 (hex) + 24 = 39
+
+        // Step 4: Divide by 6
+        int finalResult = sum / 6;  // 39 / 6 = 6
+
+        // Output the results
+        System.out.println(hexValue);
+        System.out.println(octalResult);
+        System.out.println(binaryMultiplication);
+        System.out.println(sum);
+        System.out.println(finalResult);
+    }
+}
